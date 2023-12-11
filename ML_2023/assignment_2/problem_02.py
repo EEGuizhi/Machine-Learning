@@ -6,20 +6,6 @@ import matplotlib.pyplot as plt
 SAMPLES = 30
 SIGMA_LIST = (0.01, 0.1, 1, 2)
 LAMBDA_LIST = (0, 0.01, 0.1, 1, 10)
-DATA_X = np.array([  # N = dim 0, M = dim 1
-    (1, 1),
-    (1, 3),
-    (5, 2),
-    (7, 4),
-    (9, 2)
-])
-DATA_Y = np.array([  # N = dim 0
-    2,
-    5,
-    3,
-    4,
-    8
-])
 
 def truth_func(x:float):
     return 3 + 2*x + 0.2*(x**2)

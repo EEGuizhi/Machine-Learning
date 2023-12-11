@@ -27,7 +27,6 @@ def ridge_regression(x_train:np.ndarray, y_train:np.ndarray, lambda_param:float)
         y_train : 1dim array of `[y_1, y_2, ..., y_N]`
         lambda_param : control variable to reduce search region of w
     """
-
     mean_x = np.mean(x_train, axis=0)
     mean_y = np.mean(y_train, axis=0)
     X_o = x_train - mean_x
@@ -54,9 +53,9 @@ def ridge_regression_iterative(x_train:np.ndarray, y_train:np.ndarray, lambda_pa
 
     # Step 0. Give initial values (zeros)
     w0 = np.array([0])
-    matW = np.zeros(x_train.shape[-1])
+    matW = np.zeros(x_train.shape[1])
     w0_old = np.array([0])
-    matW_old = np.zeros(x_train.shape[-1])
+    matW_old = np.zeros(x_train.shape[1])
 
     # Iterative part
     i = 0
@@ -94,9 +93,9 @@ def lasso_regression_iterative(x_train:np.ndarray, y_train:np.ndarray, lambda_pa
 
     # Step 0. Give initial values (zeros)
     w0 = np.array([0])
-    matW = np.zeros(x_train.shape[-1])
+    matW = np.zeros(x_train.shape[1])
     w0_old = np.array([0])
-    matW_old = np.zeros(x_train.shape[-1])
+    matW_old = np.zeros(x_train.shape[1])
 
     mean_x = np.mean(x_train, axis=0)
     mean_y = np.mean(y_train, axis=0)
@@ -142,10 +141,10 @@ def lasso_regression_iterative(x_train:np.ndarray, y_train:np.ndarray, lambda_pa
 
 def least_square_linear_regression(x_train:np.ndarray, y_train:np.ndarray):
     """Least Square linear regression"""
-    mat_X = np.ones((x_train.shape[0], x_train.shape[1]+1))
-    mat_X[:, 1:x_train.shape[1]+1] = DATA_X[:, 0:x_train.shape[1]]
-    mat_W = inv(mat_X.T @ mat_X) @ mat_X.T @ y_train
-    return mat_W
+    matX = np.ones((x_train.shape[0], x_train.shape[1]+1))
+    matX[:, 1:x_train.shape[1]+1] = DATA_X[:, 0:x_train.shape[1]]
+    matW = inv(matX.T @ matX) @ matX.T @ y_train
+    return matW
 
 
 if __name__ == "__main__":

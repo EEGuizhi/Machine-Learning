@@ -34,3 +34,6 @@
     - Newton's Method
     - Iterative Reweighted Least Squares
     - Multi-Class Logistic Regression
+
+- **Dimensionality Reduction**
+    - 
