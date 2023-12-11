@@ -1,10 +1,16 @@
-# Linear Regression
+# Linear Regression (Least Square)
 import numpy as np
 from numpy.linalg import inv
 import matplotlib.pyplot as plt
 
 SIGMA_LIST = [0.01, 0.1, 1, 2]
 SAMPLES = 40
+
+def linear_regression(mat_X:np.ndarray, mat_Y:np.ndarray):
+    # Linear Regression
+    mat_W = inv(mat_X.T @ mat_X) @ mat_X.T @ mat_Y
+    return mat_W
+
 
 if __name__ == "__main__":
     # Problem.1 ~ Problem.4
@@ -23,7 +29,7 @@ if __name__ == "__main__":
         mat_X[:, 2] = dataset[:, 0] * dataset[:, 0]
         mat_Y = np.empty((SAMPLES, 1))
         mat_Y[:, 0] = dataset[:, 1]
-        mat_W = inv(mat_X.T @ mat_X) @ mat_X.T @ mat_Y
+        mat_W = linear_regression(mat_X, mat_Y)
 
         # Plot
         x = np.linspace(0, 8, num=200)
