@@ -151,15 +151,15 @@ def least_square_linear_regression(x_train:np.ndarray, y_train:np.ndarray):
 if __name__ == "__main__":
     # Ridge Regression
     print(">> Ridge Regression :")
-    for lambda_idx in range(len(LAMBDA_LIST)):
-        weights = ridge_regression(DATA_X, DATA_Y, LAMBDA_LIST[lambda_idx])
-        print(f"Optimal weights (lambda={LAMBDA_LIST[lambda_idx]}) = {weights} (by direct calc)")
+    for lambda_param in LAMBDA_LIST:
+        weights = ridge_regression(DATA_X, DATA_Y, lambda_param)
+        print(f"Optimal weights (lambda={lambda_param}) = {weights} (by formula)")
 
-        weights = ridge_regression_iterative(DATA_X, DATA_Y, LAMBDA_LIST[lambda_idx])
-        print(f"Optimal weights (lambda={LAMBDA_LIST[lambda_idx]}) = {weights}\n")
+        weights = ridge_regression_iterative(DATA_X, DATA_Y, lambda_param)
+        print(f"Optimal weights (lambda={lambda_param}) = {weights}\n")
 
     # Lasso Regression
     print(">> Lasso Regression :")
-    for lambda_idx in range(len(LAMBDA_LIST)):
-        weights = lasso_regression_iterative(DATA_X, DATA_Y, LAMBDA_LIST[lambda_idx])
-        print(f"Optimal weights (lambda={LAMBDA_LIST[lambda_idx]}) = {weights}\n")
+    for lambda_param in LAMBDA_LIST:
+        weights = lasso_regression_iterative(DATA_X, DATA_Y, lambda_param)
+        print(f"Optimal weights (lambda={lambda_param}) = {weights}\n")
