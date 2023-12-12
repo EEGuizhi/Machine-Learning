@@ -9,9 +9,9 @@ Here are my solutions to the programming problems in Hw2. <br>
         |      $y$       |   $2$    |   $5$    |   $3$    |   $4$    |   $8$    |
 
     - use Ridge to determine the best predicted model when
-        <br>$\hat{y}(x, \bm{w}) = w_0 + w_1x_1 + w_2x_2$
+        <br>$\hat{y}(x, \mathbf{w}) = w_0 + w_1x_1 + w_2x_2$
     - use Lasso to determine the best predicted model when
-        <br>$\hat{y}(x, \bm{w}) = w_0 + w_1x_1 + w_2x_2$
+        <br>$\hat{y}(x, \mathbf{w}) = w_0 + w_1x_1 + w_2x_2$
     - Write your own program and don’t use the toolboxes of Ridge and Lasso.
     <br><br>
 
@@ -39,7 +39,7 @@ Here are my solutions to the programming problems in Hw2. <br>
 
 2. **<i>Problem 2</i>**：
     - Suppose $y = 3 + 2x + 0.2x^2 + n$ in which $n$ is a zero-mean Gaussian noise with variance $\sigma_N^2$ .
-    - Suppose the predicted model is $\hat{y}(x, \bm{w})=w_0+w_1x+w_2x^2$ .
+    - Suppose the predicted model is $\hat{y}(x, \mathbf{w})=w_0+w_1x+w_2x^2$ .
     - Write a program to determine the optimal weights when :
         1. $\sigma_N=0.01$
         2. $\sigma_N=0.1$
@@ -82,12 +82,12 @@ Here are my solutions to the programming problems in Hw2. <br>
     y = 3.202 + 1.892*x + 0.229*x^2  (lambda = 1)
     y = 4.323 + 1.099*x + 0.325*x^2  (lambda = 10)
     ```
-    ![](images/problem_02.png)<br><br>
+    ![](images/problem_02.png) <br><br>
 
 
 2. **<i>Problem 3</i>**：
     - Suppose $y = 3 + 2x + 0.2x^2 + n$ in which $n$ is a zero-mean Gaussian noise with variance $\sigma_N^2$ .
-    - Suppose the predicted model is $\hat{y}(x, \bm{w})=w_0+w_1x+w_2x^2$ .
+    - Suppose the predicted model is $\hat{y}(x, \mathbf{w})=w_0+w_1x+w_2x^2$ .
     - Write a program to determine the optimal weights when :
         1. $\sigma_N=0.01$
         2. $\sigma_N=0.1$
@@ -130,7 +130,7 @@ Here are my solutions to the programming problems in Hw2. <br>
     y = 2.971 + 2.151*x + 0.165*x^2  (lambda = 1)
     y = 4.249 + 1.273*x + 0.273*x^2  (lambda = 10)
     ```
-    ![](images/problem_03.png)
+    ![](./images/problem_03.png)
 
 
 ( I use Google Colab to execute my programs )
