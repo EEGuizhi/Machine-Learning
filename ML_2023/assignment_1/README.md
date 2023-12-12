@@ -1,7 +1,6 @@
 # Homework 1 (Programming Part)
-Here is my solution to these programming problems, and I execute these programs on Google Colab. <br>
+Here is my solution to the only programming problem in Hw1. <br>
 
-## Problems
 1. **<i>Problem 10</i>**：
     - Suppose $y=3+2x+0.2x^2+n$ . And $n$ is a zero-mean Gaussian noise with variance $\sigma_N^2$ .
     - Suppose the predicted model is $\hat{y}(x, w_0, w_1)=w_0+w_1x+w_2x^2$ .
@@ -16,10 +15,10 @@ Here is my solution to these programming problems, and I execute these programs 
         - Repeat procedure b. to get 40 pairs of $(x, y)$ as your own dataset.
         - Plot the regression function and data points on the same graph.
 
+    **<i>My Solution's Result</i>**：
 
-## Outputs
-1. **<i>Solution to problem 10</i>**：
-    <br>![](result.png)
+    Please see the code in "problem_10.py".<br>
+    ![](result.png)
     ```
     Regression 1 (sigma = 0.01):
     y = 0.2 * x^2  +  2.002 * x  +  2.994 
@@ -33,3 +32,5 @@ Here is my solution to these programming problems, and I execute these programs 
     Regression 4 (sigma = 2):
     y = 0.188 * x^2  +  2.173 * x  +  2.495
     ```
+
+( I use Google Colab to execute my programs )

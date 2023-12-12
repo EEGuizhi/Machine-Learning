@@ -48,7 +48,7 @@ if __name__ == "__main__":
         mat_Y = np.empty((SAMPLES, 1))
         mat_Y[:, 0] = dataset[:, 1]
 
-        print(f"Regression {sigma_idx+1} (sigma = {SIGMA_LIST[sigma_idx]}):")
+        print(f"Ridge Regression {sigma_idx+1} (sigma = {SIGMA_LIST[sigma_idx]}):")
         for lambda_param in LAMBDA_LIST:
             # Ridge Regression
             mat_W = ridge_regression(mat_X, mat_Y, lambda_param)
@@ -60,7 +60,7 @@ if __name__ == "__main__":
             plt.subplot(2, 2, sigma_idx+1)
             plt.plot(x, y, label=f"lambda = {lambda_param}")
 
-        plt.title(f"Regression {sigma_idx+1} (sigma = {SIGMA_LIST[sigma_idx]})")
+        plt.title(f"Ridge Regression {sigma_idx+1} (sigma = {SIGMA_LIST[sigma_idx]})")
         plt.plot(dataset[:, 0], dataset[:, 1], "ro", markersize=2, label="data points")
         plt.legend(loc="upper left")
         print("")
