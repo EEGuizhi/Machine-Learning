@@ -82,7 +82,8 @@ Here are my solutions to the programming problems in Hw2. <br>
     y = 3.202 + 1.892*x + 0.229*x^2  (lambda = 1)
     y = 4.323 + 1.099*x + 0.325*x^2  (lambda = 10)
     ```
-    ![](images/problem_02.png) <br><br>
+
+![](images/problem_02.png) <br><br>
 
 
 2. **<i>Problem 3</i>**：
@@ -130,7 +131,8 @@ Here are my solutions to the programming problems in Hw2. <br>
     y = 2.971 + 2.151*x + 0.165*x^2  (lambda = 1)
     y = 4.249 + 1.273*x + 0.273*x^2  (lambda = 10)
     ```
-    ![](./images/problem_03.png)
+    
+![](images/problem_03.png)
 
 
 ( I use Google Colab to execute my programs )
