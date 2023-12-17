@@ -1,5 +1,5 @@
 # Machine-Learning
-Save my codes, related to what I learned in ML courses, here. <br>
+Save my codes (learned in ML courses) here. <br>
 
 ## Courses
 - **Machine Learning**, <br>
