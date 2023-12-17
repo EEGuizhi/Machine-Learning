@@ -157,4 +157,18 @@ Here are my solutions to the programming problems in Hw2. <br>
 ![](images/problem_05.png) <br><br>
 
 
+4. **<i>Problem 7</i>**：
+
+    **<i>My Solution's Result</i> (outputs of "problem_07.py")**：
+    <br>
+    ```
+    >> weights = 
+    [[ 1.91956152 -0.67122698 -1.24833454]
+    [ 1.104031   -3.18791456  2.08388357]]
+    >> bias = [ 4.6332462  -1.95803809 -2.67520811]
+    ```
+
+![](images/problem_07.png) <br><br>
+
+
 ( I use Google Colab to execute my programs )
