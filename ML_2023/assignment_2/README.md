@@ -100,7 +100,7 @@ Here are my solutions to the programming problems in Hw2. <br>
         3. Use this procedure to have a dataset containing 30 pairs of $x$ and $y$ .
     <br><br>
 
-    **<i>My Solution's Result</i> (outputs of "problem_02.py")**：
+    **<i>My Solution's Result</i> (outputs of "problem_03.py")**：
     <br>
     ```
     Lasso Regression 1 (sigma = 0.01):
@@ -132,7 +132,29 @@ Here are my solutions to the programming problems in Hw2. <br>
     y = 4.249 + 1.273*x + 0.273*x^2  (lambda = 10)
     ```
     
-![](images/problem_03.png)
+![](images/problem_03.png) <br><br>
+
+
+3. **<i>Problem 4</i>**：
+
+    **<i>My Solution's Result</i> (outputs of "problem_04.py")**：
+    <br>
+    ```
+    >> weights = [0.40041502 0.79979249], bias = -2.200207509496154
+    ```
+
+![](images/problem_04.png) <br><br>
+
+
+3. **<i>Problem 5</i>**：
+
+    **<i>My Solution's Result</i> (outputs of "problem_05.py")**：
+    <br>
+    ```
+    >> weights = [-0.48893627 -1.8741184 ], bias = 3.438489185347353
+    ```
+
+![](images/problem_05.png) <br><br>
 
 
 ( I use Google Colab to execute my programs )
