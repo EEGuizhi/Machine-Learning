@@ -15,7 +15,7 @@ class logistic_multiclass_regression:
         self.bias = None
 
     def softmax(self, x:np.ndarray) -> np.ndarray:  # for multiple samples prediction
-        return np.exp(x) / np.expand_dims(np.sum(np.exp(x), axis=1), axis=1).repeat(x.shape[1], axis=1)
+        return np.exp(x) / np.sum(np.exp(x), axis=1, keepdims=True)
 
     def train(self, x_train:np.ndarray, y_train:np.ndarray):
         # init
