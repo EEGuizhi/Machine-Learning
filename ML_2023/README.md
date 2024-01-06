@@ -36,4 +36,10 @@
     - Multi-Class Logistic Regression
 
 - **Dimensionality Reduction**
-    - 
+    - Feature Selection
+        - Filter Methods
+        - Wrapper Methods
+        - Embedded Methods
+    - Feature Extraction
+        - Principal Component Analysis
+        - Singular Value Decomposition
